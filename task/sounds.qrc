@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sound">
+        <file>sound/sea_mine_explosion.wav</file>
+        <file>sound/water_spell.wav</file>
+    </qresource>
+</RCC>
