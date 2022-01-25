@@ -16,11 +16,6 @@
 
 #include <QMessageBox>
 
-
-
-
-
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -37,7 +32,6 @@ public:
 
 private slots:
     void buttonClicked();
-
 
     void on_pushButton_clicked();
 
@@ -62,15 +56,18 @@ private:
     QLabel *newLabel = new QLabel(this);
 
     int fontSize = 10;
-    int X = 20;
-    int Y = 30;
-    int Width = 200;
-    int Height = 60;
-    int Margin = 10;
+    int X = 40;
+    int Y = 50;
+    int Width = 400;
+    int Height = 120;
+    int Margin = 30;
 
     QPushButton *arr[100][100];
     Ui::MainWindow *ui;
 
+    void randomField();
+
+    //predefine variants ship's arrangement
     int BattleField [6][10][10] = {
      {
                     {0,0,0,1,1,1,1,0,0,0},
@@ -145,10 +142,6 @@ private:
                       {0,0,0,0,0,0,0,0,0,0}
         }
     };
-
-
-
-    void randomField();
 
 };
 #endif // MAINWINDOW_H
